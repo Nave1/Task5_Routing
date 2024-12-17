@@ -1,0 +1,139 @@
+/** Global Layout ***/
+* {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  box-sizing: border-box; /* Consistent box model */
+}
+
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: royalblue;
+  margin-bottom: 20px; /* Add space below the header */
+}
+
+div {
+  text-align: center;
+  color: red;
+  font-size: 1.6rem;
+  margin: 20px; /* Add spacing above and below the div */
+}
+
+footer {
+  color: red;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px; /* Add spacing above the footer */
+}
+/** End Of Default Html Settings Usage **/
+
+/** Start of aboutus.html Usage ***/
+header.about-us-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+body.about-us-body {
+  display: flex;
+  flex-direction: column; /* Keep the header and authors in vertical order */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif;
+}
+
+.authors {
+  display: flex; /* Arrange children (left and right) side by side */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Use the full width of the container */
+  height: 50vh; /* Adjust height as needed */
+  padding: 0 20px; /* Add padding to the sides */
+}
+
+/* Left and right sections */
+.left,
+.right {
+  width: 45%; /* Each section takes 45% of the container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left side */
+.left {
+  padding: 20px;
+}
+
+/* Right side */
+.right {
+  padding: 20px;
+}
+.left img,
+.right img,
+.middle {
+  width: 300px;
+  height: auto;
+  align-items: center;
+}
+
+/* Text styling for both sides */
+.left p,
+.right p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/** End of aboutus.html Usage ***/
+
+/** Start of contactus.html Usage ***/
+.links {
+  font-size: 3rem;
+  text-align: center;
+  display: flex; /* Use flex to align links in a row */
+  justify-content: center;
+  cursor: pointer;
+}
+
+.links ul {
+  display: flex; /* Ensure the ul is a flex container */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.links li {
+  margin: 20px 30px;
+  transition: background-color 0.3s; /* Change transition to color */
+}
+
+.links li:hover {
+  background-color: white; /* Change color on hover */
+}
+
+.contactus-button {
+  display: flex;
+  justify-content: center;
+}
+.contactus-button button {
+  background-color: #4bc007;
+  border-style: solid;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+  color: white;
+  padding: 10px 20px;
+}
+.contactus-button button:hover {
+  background-color: royalblue;
+}
